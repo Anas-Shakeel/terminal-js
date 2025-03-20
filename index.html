@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Terminal</title>
+
+        <!-- Ubuntu Mono Font -->
+        <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> -->
+
+        <link rel="stylesheet" href="style.css" />
+        <script src="app.js"></script>
+    </head>
+    <body>
+        <main class="terminal">
+            <!-- Titlebar -->
+            <div class="titlebar">
+                <!-- App Logo/Title -->
+                <div class="titlebar-title-container">
+                    <!-- Icon -->
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                        width="48"
+                        height="48"
+                        class="terminal-icon">
+                        <path
+                            d="M2.84375 3C1.273438 3 0 4.273438 0 5.84375L0 10L50 10L50 5.84375C50 4.273438 48.726563 3 47.15625 3 Z M 0 12L0 46C0 46.554688 0.449219 47 1 47L49 47C49.554688 47 50 46.554688 50 46L50 12 Z M 15.09375 19.96875C15.351563 19.972656 15.589844 20.050781 15.78125 20.25L22.40625 27.0625L15.625 33.6875C15.429688 33.875 15.191406 33.96875 14.9375 33.96875C14.675781 33.96875 14.414063 33.855469 14.21875 33.65625C13.832031 33.261719 13.824219 32.636719 14.21875 32.25L19.59375 27.03125L14.375 21.65625C13.988281 21.261719 13.980469 20.636719 14.375 20.25C14.574219 20.054688 14.835938 19.964844 15.09375 19.96875 Z M 23 32L36 32C36.554688 32 37 32.445313 37 33C37 33.554688 36.554688 34 36 34L23 34C22.449219 34 22 33.554688 22 33C22 32.445313 22.449219 32 23 32Z" />
+                    </svg>
+                    <!-- Title -->
+                    <p class="terminal-title">Terminal</p>
+                </div>
+
+                <!-- Close Button -->
+                <!-- <div class="terminal-btn-close">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                        width="48"
+                        height="48"
+                        class="terminal-btn-close-svg">
+                        <path
+                            d="M9.15625 6.3125L6.3125 9.15625L22.15625 25L6.21875 40.96875L9.03125 43.78125L25 27.84375L40.9375 43.78125L43.78125 40.9375L27.84375 25L43.6875 9.15625L40.84375 6.3125L25 22.15625Z" />
+                    </svg>
+                </div> -->
+            </div>
+
+            <!-- Main Terminal Screen -->
+            <div class="terminal-screen custom-scrollbar">
+                <div class="terminal-text-container" id="stdout">
+                    <span class="terminal-line">Terminal [version 1.0]</span>
+                    <span class="terminal-line">Copyright (C) Anas Shakeel. All rights reserved.</span>
+                    <span class="terminal-line"> </span>
+                    <span class="terminal-line"
+                        >Source code<a href="https://github.com/anas-shakeel/js-apps/apps/terminal/" target="_blank"
+                            >https://github.com/anas-shakeel/js-apps/apps/terminal/</a
+                        >
+                    </span>
+                    <span class="terminal-line"> </span>
+                    <span class="terminal-line">
+                        <span>~$ </span>
+                        <span class="terminal-line-input" contenteditable="true" autofocus spellcheck="false"></span>
+                    </span>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
